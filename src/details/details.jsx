@@ -85,7 +85,9 @@ function Details(){
                         beds[t].map((bed)=>{
                             return(
                             <>
-                            {bed.bedStatus==='open'&&<i class="bi bi-clipboard h3 m-2" onClick={()=>{bookbed(bed.bedid)}}></i>}
+                            {bed.bedStatus==='open'&&<i class="bi bi-clipboard h3 m-2" onClick={()=>{bookbed(bed.bedid)}}>
+
+                                </i>}
                             {bed.bedStatus==='occupied'&&<i class="bi bi-clipboard-fill h3 m-2" onClick={()=>{bookbed(bed.bedid)}}></i>}
                             </>)
                         })
